@@ -11,17 +11,15 @@ public class ClientConnexion implements Runnable {
     private Socket socketClient;
 
     private InetAddress localAddress;
-    private int localPort;
 
     private String pathToFiles;
 
 
-    public ClientConnexion(int localPort, String localName, String pathToFiles) throws IOException {
-        this.localPort = localPort;
+    public ClientConnexion(String localName, String pathToFiles) throws IOException {
         this.localAddress = InetAddress.getByName(localName);
         this.pathToFiles = pathToFiles;
 
-        mySkServer = new ServerSocket(this.localPort, 10, this.localAddress);
+        mySkServer = new ServerSocket(0, 10, this.localAddress);
     }
 
     @Override
@@ -39,5 +37,9 @@ public class ClientConnexion implements Runnable {
             }
         }
 
+    }
+
+    public int getLocalPort() {
+        return mySkServer.getLocalPort();
     }
 }

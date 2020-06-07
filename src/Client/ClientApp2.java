@@ -11,20 +11,19 @@ public class ClientApp2 {
         int serverPort  = 45007;
 
         String localName = "192.168.1.74";
-        int localPortForServer  = 45011;
-        int localPortForP2pIn   = 45012;
-        int localPortForP2pOut  = 45013;
 
         String pathToFiles = "C://toSend/";
 
 
-        // Créer un client
-        Client client = new Client(serverName, serverPort, localName, localPortForServer, localPortForP2pIn, localPortForP2pOut, pathToFiles);
+
 
         // Création du thread pour accepter les connexions de clients (p2p)
-        ClientConnexion clientConnexion = new ClientConnexion(localPortForP2pIn, localName, pathToFiles);
+        ClientConnexion clientConnexion = new ClientConnexion(localName, pathToFiles);
         Thread thread = new Thread(clientConnexion);
         thread.start();
+
+        // Créer un client
+        Client client = new Client(serverName, serverPort, localName, clientConnexion.getLocalPort(), pathToFiles);
 
         // Connecter le client au serveur
         client.connectToServer();
@@ -43,6 +42,6 @@ public class ClientApp2 {
         System.out.println("test");
         thread.interrupt();
 
-
+        System.exit(0);
     }
 }

@@ -14,9 +14,8 @@ public class Client {
 
     // Local Client
     private InetAddress localAddress;
-    private int localPortForServer;
-    private int localPortForP2pIn;
-    private int localPortForP2pOut;
+    private int localPortForP2pIn = 0;
+
 
     // Access Server
     private InetAddress serverAddress;
@@ -33,17 +32,16 @@ public class Client {
 
     private JSONArray availableFilesListJson;
 
-    private PrintWriter poutServer;
+  //  private PrintWriter poutServer;
     private PrintWriter poutClient;
+    private DataOutputStream dataOut;
 
     private Boolean connected;
 
 
-    public Client (String serverName, int serverPort, String clientName, int localPortForServer, int localPortForP2pIn, int localPortForP2pOut, String pathToFiles) throws IOException {
+    public Client (String serverName, int serverPort, String clientName, int localPortForP2pIn, String pathToFiles) throws IOException {
         this.localAddress = InetAddress.getByName(clientName);
-        this.localPortForServer = localPortForServer;
         this.localPortForP2pIn = localPortForP2pIn;
-        this.localPortForP2pOut = localPortForP2pOut;
         this.pathToFiles = pathToFiles;
 
         this.serverAddress = InetAddress.getByName(serverName);
@@ -52,16 +50,17 @@ public class Client {
 
 
     public void connectToServer() throws IOException {
-        this.socketToServer = new Socket(serverAddress, serverPort, localAddress, localPortForServer);
+        socketToServer = new Socket(serverAddress, serverPort, localAddress, 0);
         System.out.println();
         System.out.println("Connexion to server " + serverAddress + ":" + serverPort + " established.");
         connected = true;
 
-        poutServer = new PrintWriter(this.socketToServer.getOutputStream());
+       // poutServer = new PrintWriter(this.socketToServer.getOutputStream());
+        dataOut = new DataOutputStream(socketToServer.getOutputStream());
     }
 
     public void connectToClient() throws IOException {
-        this.socketToP2pClient = new Socket(clientP2pAddress, clientP2pPort, localAddress, localPortForP2pOut);
+        this.socketToP2pClient = new Socket(clientP2pAddress, clientP2pPort, localAddress, 0);
         System.out.println();
         System.out.println("Connexion to client " + serverAddress + ":" + serverPort + " established.");
         connected = true;
@@ -89,9 +88,9 @@ public class Client {
 
     }
 
-    public void sendLocalPortForP2pIn() {
-        poutServer.write(localPortForP2pIn);
-        poutServer.flush();
+    public void sendLocalPortForP2pIn() throws IOException {
+        dataOut.writeInt(localPortForP2pIn);
+        dataOut.flush();
     }
 
 
@@ -116,10 +115,10 @@ public class Client {
 
 
     public void getAvailablesFiles() throws IOException {
-        int messageToSend = 1;
-        poutServer.write(messageToSend);
+        int numAction = 1;
+        dataOut.writeInt(numAction);
         System.out.println("Requesting list of available files.");
-        poutServer.flush();
+        dataOut.flush();
 
         DataInputStream dataInputStream = new DataInputStream(this.socketToServer.getInputStream());
         String json = dataInputStream.readUTF();
@@ -152,7 +151,7 @@ public class Client {
     }
 
 
-    public void getFileFromClient() throws IOException, InterruptedException, UnsupportedAudioFileException, LineUnavailableException {
+    public void getFileFromClient() throws IOException, UnsupportedAudioFileException, LineUnavailableException {
         int idUser = selectUser();
         String fileName = selectFile();
 
@@ -241,10 +240,10 @@ public class Client {
 
 
     public void disconnectFromServer() throws IOException {
-        int messageToSend = 2;
-        poutServer.write(messageToSend);
+        int numAction = 2;
+        dataOut.write(numAction);
         System.out.println("Disconnecting...");
-        poutServer.flush();
+        dataOut.flush();
 
         socketToServer.close();
 
