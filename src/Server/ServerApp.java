@@ -1,32 +1,27 @@
 package Server;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.*;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.logging.FileHandler;
-import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 public class ServerApp {
 
-    private static Logger logger;
+    private static Logger logger = LogManager.getLogger(ServerApp.class);
 
     public static void main(String[] args) {
 
 
         try {
-            logger = Logger.getLogger("TestLog");
-
-            FileHandler fh = new FileHandler("./my.log",true);
-            logger.addHandler(fh);
-
-            SimpleFormatter simpleFormatter = new SimpleFormatter();
-            fh.setFormatter(simpleFormatter);
-
-
             String interfaceName = "wlan2";
             int serverPort = 45007;
 
             // Créer le serveur
-            Server server = new Server(logger, interfaceName, serverPort);
+            Server server = new Server(interfaceName, serverPort);
 
             // Récupérer l'ip du serveur
             server.getLocalAddress();
@@ -41,7 +36,7 @@ public class ServerApp {
             server.acceptConnexions();
 
         } catch (IOException e) {
-            logger.severe("IOException thrown when creating FileHandler");
+            logger.error("IOException thrown when creating FileHandler");
             e.printStackTrace();
         }
 

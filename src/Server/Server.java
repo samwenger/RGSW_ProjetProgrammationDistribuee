@@ -1,5 +1,8 @@
 package Server;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -7,7 +10,6 @@ import java.io.ObjectInputStream;
 import java.net.*;
 import java.util.ArrayList;
 import java.util.Enumeration;
-import java.util.logging.Logger;
 
 
 public class Server {
@@ -21,19 +23,17 @@ public class Server {
 
     private int clientNumber;
 
-    private Logger logger;
-
     private ArrayList<ConnectedClient> clients = new ArrayList<>();
 
+    public Logger logger = LogManager.getLogger(Server.class);
 
-    public Server(Logger logger, String interfaceName, int serverPort) {
-        this.logger = logger;
+
+    public Server(String interfaceName, int serverPort) {
         this.interfaceName = interfaceName;
         this.serverPort = serverPort;
 
         this.clientNumber = 1;
     }
-
 
 
     public void getLocalAddress() {
@@ -54,7 +54,7 @@ public class Server {
             }
 
         } catch (SocketException e) {
-            logger.severe("SocketException thrown when trying to get InetAddress");
+            logger.error("SocketException thrown when trying to get InetAddress");
             e.printStackTrace();
         }
     }
@@ -64,7 +64,7 @@ public class Server {
         try {
             serverSocket = new ServerSocket(serverPort, 10, localAddress);
         } catch (IOException e) {
-            logger.severe("IOException thrown when trying to create ServerSocket");
+            logger.error("IOException thrown when trying to create ServerSocket");
             e.printStackTrace();
         }
     }
@@ -87,7 +87,7 @@ public class Server {
                 DataOutputStream dataOutputStream = new DataOutputStream(clientSocket.getOutputStream());
                 ObjectInputStream objectInputStream = new ObjectInputStream(clientSocket.getInputStream());
 
-                Thread t = new Thread(new AcceptClient(this, clientNumber, logger, clientSocket, dataInputStream, dataOutputStream, objectInputStream));
+                Thread t = new Thread(new AcceptClient(this, clientNumber, clientSocket, dataInputStream, dataOutputStream, objectInputStream));
 
                 logger.info("A new client has been accepted. ");
 

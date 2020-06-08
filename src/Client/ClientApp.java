@@ -42,5 +42,6 @@ public class ClientApp {
         thread.interrupt();
 
         System.exit(0);
+
     }
 }

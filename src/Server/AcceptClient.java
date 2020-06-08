@@ -5,7 +5,6 @@ import com.google.gson.Gson;
 import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.logging.Logger;
 
 public class AcceptClient implements Runnable {
 
@@ -13,7 +12,6 @@ public class AcceptClient implements Runnable {
 
     private Socket clientSocketOnServer;
     private int clientNumber;
-    private Logger logger;
 
     private DataInputStream dataIn;
     private DataOutputStream dataOut;
@@ -22,10 +20,9 @@ public class AcceptClient implements Runnable {
     private ConnectedClient client;
 
 
-    public AcceptClient (Server server, int clientNumber, Logger logger, Socket clientSocketOnServer, DataInputStream dataInputStream, DataOutputStream dataOutputStream, ObjectInputStream objectInputStream)
+    public AcceptClient (Server server, int clientNumber, Socket clientSocketOnServer, DataInputStream dataInputStream, DataOutputStream dataOutputStream, ObjectInputStream objectInputStream)
     {
         this.server = server;
-        this.logger = logger;
         this.clientSocketOnServer = clientSocketOnServer;
         this.clientNumber = clientNumber;
 
@@ -85,7 +82,7 @@ public class AcceptClient implements Runnable {
                             dataOut.writeUTF(json);
                             dataOut.flush();
 
-                            logger.info("Files list sent to client n°" + clientNumber);
+                            this.server.logger.info("Files list sent to client n°" + clientNumber);
                             break;
 
                         // si action 2: enlever les fichiers de l'utilisateur de la liste et fermer le socket
