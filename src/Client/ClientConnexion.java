@@ -15,8 +15,8 @@ public class ClientConnexion implements Runnable {
     private String pathToFiles;
 
 
-    public ClientConnexion(String localName, String pathToFiles) throws IOException {
-        this.localAddress = InetAddress.getByName(localName);
+    public ClientConnexion(InetAddress localAddress, String pathToFiles) throws IOException {
+        this.localAddress = localAddress;
         this.pathToFiles = pathToFiles;
 
         mySkServer = new ServerSocket(0, 10, this.localAddress);

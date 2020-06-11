@@ -15,15 +15,15 @@ import java.util.Enumeration;
 public class Server {
 
     private String interfaceName;
+    private InetAddress localAddress;
     private int serverPort;
 
-    private InetAddress localAddress;
     private ServerSocket serverSocket;
     private Socket clientSocket;
 
     private int clientNumber;
-
     private ArrayList<ConnectedClient> clients = new ArrayList<>();
+
 
     public Logger logger = LogManager.getLogger(Server.class);
 
@@ -89,13 +89,14 @@ public class Server {
 
                 Thread t = new Thread(new AcceptClient(this, clientNumber, clientSocket, dataInputStream, dataOutputStream, objectInputStream));
 
-                logger.info("A new client has been accepted. ");
+                logger.info("A new client has been accepted.");
 
                 t.start();
 
                 clientNumber++;
 
             } catch (Exception e1) {
+                logger.error("Exception thrown when creating thread");
                 try {
                     clientSocket.close();
                 } catch (IOException e2) {

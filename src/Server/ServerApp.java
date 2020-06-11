@@ -4,10 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.*;
-import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.logging.FileHandler;
-import java.util.logging.SimpleFormatter;
 
 public class ServerApp {
 
@@ -35,11 +31,11 @@ public class ServerApp {
             // Attente de connexions
             server.acceptConnexions();
 
+
         } catch (IOException e) {
-            logger.error("IOException thrown when creating FileHandler");
+            logger.error("IOException thrown when accepting connexions from clients.");
             e.printStackTrace();
         }
 
     }
-
 }

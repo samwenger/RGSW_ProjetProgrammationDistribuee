@@ -1,5 +1,7 @@
 package Client;
 
+import com.google.gson.JsonArray;
+import javazoom.jl.decoder.JavaLayerException;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -39,8 +41,8 @@ public class Client {
     private Boolean connected;
 
 
-    public Client (String serverName, int serverPort, String clientName, int localPortForP2pIn, String pathToFiles) throws IOException {
-        this.localAddress = InetAddress.getByName(clientName);
+    public Client (String serverName, int serverPort, InetAddress localAddress, int localPortForP2pIn, String pathToFiles) throws IOException {
+        this.localAddress = localAddress;
         this.localPortForP2pIn = localPortForP2pIn;
         this.pathToFiles = pathToFiles;
 
@@ -60,12 +62,13 @@ public class Client {
     }
 
     public void connectToClient() throws IOException {
-        this.socketToP2pClient = new Socket(clientP2pAddress, clientP2pPort, localAddress, 0);
-        System.out.println();
-        System.out.println("Connexion to client " + serverAddress + ":" + serverPort + " established.");
-        connected = true;
 
-        poutClient = new PrintWriter(this.socketToP2pClient.getOutputStream());
+            this.socketToP2pClient = new Socket(clientP2pAddress, clientP2pPort, localAddress, 0);
+            System.out.println();
+            System.out.println("Connexion to client " + serverAddress + ":" + serverPort + " established.");
+            connected = true;
+
+            poutClient = new PrintWriter(this.socketToP2pClient.getOutputStream());
     }
 
 
@@ -94,7 +97,7 @@ public class Client {
     }
 
 
-    public void showOptions() throws IOException, InterruptedException, UnsupportedAudioFileException, LineUnavailableException {
+    public void showOptions() throws Exception {
         System.out.println();
         System.out.println("Que souhaitez-vous faire ? ");
         System.out.println("1 - Obtenir la liste des fichiers disponibles");
@@ -142,7 +145,7 @@ public class Client {
             JSONArray files = client.getJSONArray("clientFilesList");
 
             for(int j=0; j<files.length(); j++){
-                System.out.println("  " + files.get(j));
+                System.out.println("Id " + (j+1) + ":  " + files.get(j));
             }
 
             System.out.println();
@@ -151,9 +154,15 @@ public class Client {
     }
 
 
-    public void getFileFromClient() throws IOException, UnsupportedAudioFileException, LineUnavailableException {
+    public void getFileFromClient() throws Exception {
+
+        if(availableFilesListJson == null || availableFilesListJson.length() == 0){
+            System.out.println("Veuillez récupérer la liste des fichiers disponibles avant de continuer.");
+            return;
+        }
+
         int idUser = selectUser();
-        String fileName = selectFile();
+        int idFile = selectFile(idUser);
 
         // connect to Client
         for(int i=0; i<availableFilesListJson.length(); i++){
@@ -163,6 +172,8 @@ public class Client {
             if(client.getInt("clientNumber") == idUser){
                 clientP2pAddress = InetAddress.getByName(client.getString("clientAddress"));
                 clientP2pPort = client.getInt("clientPort");
+                String fileName = client.getJSONArray("clientFilesList").getString(idFile-1);
+
                 connectToClient();
                 sendFileTitle(fileName);
                 readFile();
@@ -175,21 +186,61 @@ public class Client {
         System.out.println();
         System.out.println("Connexion à un utilisateur");
         System.out.println("---------------------------------");
-        System.out.print("Veuillez entrer l'id de l'utilisateur : ");
 
-        Scanner input = new Scanner(System.in);
-        int id = input.nextInt();
+        int id;
+        Boolean valid = false;
+
+        do {
+            System.out.print("Veuillez entrer l'id de l'utilisateur : ");
+            Scanner input = new Scanner(System.in);
+            id = input.nextInt();
+
+            for(int i=0; i < availableFilesListJson.length(); i++) {
+                JSONObject client = availableFilesListJson.getJSONObject(i);
+
+                if(client.getInt("clientNumber") == id){
+                    valid = true;
+                }
+                else{
+                    System.out.println("Utilisateur inexistant.");
+                }
+            }
+
+        } while(!valid);
+
 
         return id;
     }
 
 
 
-    public String selectFile() {
-        System.out.print("Veuillez entrer le nom du fichier : ");
-        Scanner input = new Scanner(System.in);
-        String titre = input.nextLine();
-        return titre;
+    public int selectFile(int idUser) {
+
+        Boolean valid = false;
+
+        int idFile;
+
+        do {
+            System.out.print("Veuillez entrer l'id du fichier : ");
+            Scanner input = new Scanner(System.in);
+            idFile = input.nextInt();
+
+            for(int i=0; i < availableFilesListJson.length(); i++) {
+                JSONObject client = availableFilesListJson.getJSONObject(i);
+
+                if(client.getInt("clientNumber") == idUser){
+                    if(client.getJSONArray("clientFilesList").length() >= idFile && idFile > 0){
+                        valid = true;
+                    }
+                    else{
+                        System.out.println("Fichier inexistant.");
+                    }
+                }
+            }
+
+        } while (!valid);
+
+        return idFile;
     }
 
 
@@ -199,7 +250,7 @@ public class Client {
         dataOutputStream.flush();
     }
 
-    public void readFile() throws IOException, LineUnavailableException, UnsupportedAudioFileException {
+    public void readFile() throws Exception {
         InputStream is = new BufferedInputStream(socketToP2pClient.getInputStream());
 
         AudioPlayer player = new AudioPlayer(is);

@@ -1,7 +1,6 @@
 package Client;
 
 import javax.sound.sampled.*;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -23,7 +22,7 @@ public class AudioPlayer {
     {
         // create AudioInputStream object
         audioInputStream = AudioSystem.getAudioInputStream(is);
-                //AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
+        //AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
 
         // create clip reference
         clip = AudioSystem.getClip();
@@ -31,7 +30,7 @@ public class AudioPlayer {
         // open audioInputStream to the clip
         clip.open(audioInputStream);
 
-       // clip.loop(Clip.LOOP_CONTINUOUSLY);
+        // clip.loop(Clip.LOOP_CONTINUOUSLY);
     }
 
     public void play()
@@ -55,15 +54,16 @@ public class AudioPlayer {
             System.out.println("audio is already paused");
             return;
         }
-        this.currentFrame =
-                this.clip.getMicrosecondPosition();
+        this.currentFrame = this.clip.getMicrosecondPosition();
         clip.stop();
         status = "paused";
     }
 
     public void stop()
     {
-        pause();
+        if(clip.getMicrosecondPosition() != 0){
+            pause();
+        }
         clip.setMicrosecondPosition(0);
     }
 

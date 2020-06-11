@@ -20,8 +20,7 @@ public class ConnectedClient {
         this.clientFilesList = clientFilesList;
     }
 
-    public int getClientNumber () {
+    public int getClientNumber() {
         return clientNumber;
     }
-
 }
