@@ -1,70 +1,65 @@
 package Client;
 
+import javafx.embed.swing.JFXPanel;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import org.apache.commons.io.IOUtils;
+
 import javax.sound.sampled.*;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 
 public class AudioPlayer {
-    // to store current position
-    Long currentFrame;
-    Clip clip;
 
-    // current status of clip
-    String status;
+    private final JFXPanel fxPanel = new JFXPanel();
+    private MediaPlayer mediaPlayer;
 
-    AudioInputStream audioInputStream;
-    static String filePath;
+    private File tempFile;
 
     // constructor to initialize streams and clip
     public AudioPlayer(InputStream is)
             throws UnsupportedAudioFileException,
             IOException, LineUnavailableException
     {
-        // create AudioInputStream object
-        audioInputStream = AudioSystem.getAudioInputStream(is);
-        //AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
+        stream2file(is);
 
-        // create clip reference
-        clip = AudioSystem.getClip();
+        Media media = new Media(tempFile.toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
 
-        // open audioInputStream to the clip
-        clip.open(audioInputStream);
+        is.close();
 
-        // clip.loop(Clip.LOOP_CONTINUOUSLY);
     }
 
     public void play()
     {
-        if (clip.getMicrosecondPosition() == clip.getMicrosecondLength())
-        {
-            clip.setMicrosecondPosition(0);
-        }
-        //start the clip
-        clip.start();
-
-        status = "play";
+        mediaPlayer.play();
     }
 
 
     // Method to pause the audio
     public void pause()
     {
-        if (status.equals("paused"))
-        {
-            System.out.println("audio is already paused");
-            return;
-        }
-        this.currentFrame = this.clip.getMicrosecondPosition();
-        clip.stop();
-        status = "paused";
+        mediaPlayer.pause();
     }
+
 
     public void stop()
     {
-        if(clip.getMicrosecondPosition() != 0){
-            pause();
-        }
-        clip.setMicrosecondPosition(0);
+        mediaPlayer.stop();
+
+        System.out.println(tempFile.getPath());
+        this.tempFile.delete();
+    }
+
+
+    public void stream2file (InputStream in) throws IOException {
+        tempFile = File.createTempFile("tempStream", ".tmp");
+        tempFile.deleteOnExit();
+
+        OutputStream out = new FileOutputStream(tempFile);
+        IOUtils.copy(in, out);
+        out.close();
+        in.close();
+
     }
 
 

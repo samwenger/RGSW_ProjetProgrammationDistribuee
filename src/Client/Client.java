@@ -254,6 +254,7 @@ public class Client {
         InputStream is = new BufferedInputStream(socketToP2pClient.getInputStream());
 
         AudioPlayer player = new AudioPlayer(is);
+        is.close();
         System.out.println();
         System.out.println("---------------------------------------------------");
         System.out.println("Welcome to AudioPlayer");
