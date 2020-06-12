@@ -1,0 +1,371 @@
+2020-06-09 20:28:27,529 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
+2020-06-09 20:28:39,190 INFO S.Server [main] A new client has been accepted.
+2020-06-09 20:28:39,250 INFO S.AcceptClient [Thread-0] Client n°1connected. --> Accessible at : /192.168.1.74:64049
+2020-06-09 20:28:42,579 INFO S.Server [main] A new client has been accepted.
+2020-06-09 20:28:42,593 INFO S.AcceptClient [Thread-1] Client n°2connected. --> Accessible at : /192.168.1.74:64057
+2020-06-09 20:28:45,158 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
+2020-06-09 20:29:01,681 INFO S.AcceptClient [Thread-1] Files list sent to client n°2
+2020-06-09 20:29:38,440 ERROR S.AcceptClient [Thread-1] IOException when interacting with client.
+2020-06-09 20:29:38,441 WARN S.AcceptClient [Thread-1] Lost the connexion with client. Files list has been updated.
+2020-06-09 20:29:44,229 ERROR S.AcceptClient [Thread-0] IOException when interacting with client.
+2020-06-09 20:29:44,231 WARN S.AcceptClient [Thread-0] Lost the connexion with client. Files list has been updated.
+2020-06-09 20:29:44,782 INFO S.Server [main] A new client has been accepted.
+2020-06-09 20:29:44,819 INFO S.AcceptClient [Thread-2] Client n°3connected. --> Accessible at : /192.168.1.74:64073
+2020-06-09 20:29:50,837 INFO S.Server [main] A new client has been accepted.
+2020-06-09 20:29:50,880 INFO S.AcceptClient [Thread-3] Client n°4connected. --> Accessible at : /192.168.1.74:64084
+2020-06-09 20:29:52,839 INFO S.AcceptClient [Thread-2] Files list sent to client n°3
+2020-06-09 20:33:34,043 ERROR S.AcceptClient [Thread-2] IOException when interacting with client.
+2020-06-09 20:33:34,044 WARN S.AcceptClient [Thread-2] Lost the connexion with client. Files list has been updated.
+2020-06-09 20:33:36,747 INFO S.Server [main] A new client has been accepted.
+2020-06-09 20:33:36,766 INFO S.AcceptClient [Thread-4] Client n°5connected. --> Accessible at : /192.168.1.74:64208
+2020-06-09 20:33:40,729 INFO S.AcceptClient [Thread-4] Files list sent to client n°5
+2020-06-09 20:37:43,406 INFO S.AcceptClient [Thread-4] Files list sent to client n°5
+2020-06-09 21:44:57,576 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
+2020-06-09 21:45:15,642 INFO S.Server [main] A new client has been accepted.
+2020-06-09 21:45:15,731 INFO S.AcceptClient [Thread-0] Client n°1connected. --> Accessible at : /192.168.1.74:65272
+2020-06-09 21:45:20,024 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
+2020-06-09 21:45:23,305 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
+2020-06-09 21:52:47,965 INFO S.Server [main] A new client has been accepted.
+2020-06-09 21:52:48,010 INFO S.AcceptClient [Thread-1] Client n°2connected. --> Accessible at : /192.168.1.74:65387
+2020-06-09 21:53:00,478 ERROR S.AcceptClient [Thread-0] IOException when interacting with client.
+2020-06-09 21:53:00,479 WARN S.AcceptClient [Thread-0] Lost the connexion with client. Files list has been updated.
+2020-06-09 21:53:03,907 INFO S.Server [main] A new client has been accepted.
+2020-06-09 21:53:03,945 INFO S.AcceptClient [Thread-2] Client n°3connected. --> Accessible at : /192.168.1.74:65401
+2020-06-09 22:00:33,508 ERROR S.AcceptClient [Thread-1] IOException when interacting with client.
+2020-06-09 22:00:33,509 WARN S.AcceptClient [Thread-1] Lost the connexion with client. Files list has been updated.
+2020-06-09 22:07:19,502 ERROR S.AcceptClient [Thread-2] IOException when interacting with client.
+2020-06-09 22:07:19,504 WARN S.AcceptClient [Thread-2] Lost the connexion with client. Files list has been updated.
+2020-06-09 22:07:30,773 INFO S.Server [main] A new client has been accepted.
+2020-06-09 22:07:30,801 INFO S.AcceptClient [Thread-3] Client n°4connected. --> Accessible at : /192.168.1.74:49161
+2020-06-09 22:14:04,412 ERROR S.AcceptClient [Thread-3] IOException when interacting with client.
+2020-06-09 22:14:04,414 WARN S.AcceptClient [Thread-3] Lost the connexion with client. Files list has been updated.
+2020-06-09 22:14:12,864 INFO S.Server [main] A new client has been accepted.
+2020-06-09 22:14:12,883 INFO S.AcceptClient [Thread-4] Client n°5connected. --> Accessible at : /192.168.1.74:49279
+2020-06-09 22:19:11,976 ERROR S.AcceptClient [Thread-4] IOException when interacting with client.
+2020-06-09 22:19:11,977 WARN S.AcceptClient [Thread-4] Lost the connexion with client. Files list has been updated.
+2020-06-09 22:19:21,342 INFO S.Server [main] A new client has been accepted.
+2020-06-09 22:19:21,375 INFO S.AcceptClient [Thread-5] Client n°6connected. --> Accessible at : /192.168.1.74:49342
+2020-06-09 22:19:36,930 ERROR S.AcceptClient [Thread-5] IOException when interacting with client.
+2020-06-09 22:19:36,932 WARN S.AcceptClient [Thread-5] Lost the connexion with client. Files list has been updated.
+2020-06-09 22:19:47,922 INFO S.Server [main] A new client has been accepted.
+2020-06-09 22:19:47,956 INFO S.AcceptClient [Thread-6] Client n°7connected. --> Accessible at : /192.168.1.74:49358
+2020-06-09 22:20:53,503 ERROR S.AcceptClient [Thread-6] IOException when interacting with client.
+2020-06-09 22:20:53,506 WARN S.AcceptClient [Thread-6] Lost the connexion with client. Files list has been updated.
+2020-06-09 22:21:15,217 INFO S.Server [main] A new client has been accepted.
+2020-06-09 22:21:15,257 INFO S.AcceptClient [Thread-7] Client n°8connected. --> Accessible at : /192.168.1.74:49385
+2020-06-09 22:36:32,781 ERROR S.AcceptClient [Thread-7] IOException when interacting with client.
+2020-06-09 22:36:32,785 WARN S.AcceptClient [Thread-7] Lost the connexion with client. Files list has been updated.
+2020-06-09 22:44:02,125 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
+2020-06-09 22:44:18,936 INFO S.Server [main] A new client has been accepted.
+2020-06-09 22:44:18,969 INFO S.AcceptClient [Thread-0] Client n°1connected. --> Accessible at : /192.168.1.74:49602
+2020-06-09 22:56:35,545 ERROR S.AcceptClient [Thread-0] IOException when interacting with client.
+2020-06-09 22:56:35,549 WARN S.AcceptClient [Thread-0] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:00:42,559 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:00:42,592 INFO S.AcceptClient [Thread-1] Client n°2connected. --> Accessible at : /192.168.1.74:49776
+2020-06-09 23:00:47,537 ERROR S.AcceptClient [Thread-1] IOException when interacting with client.
+2020-06-09 23:00:47,539 WARN S.AcceptClient [Thread-1] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:00:55,612 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:00:55,627 INFO S.AcceptClient [Thread-2] Client n°3connected. --> Accessible at : /192.168.1.74:49785
+2020-06-09 23:01:02,958 ERROR S.AcceptClient [Thread-2] IOException when interacting with client.
+2020-06-09 23:01:02,959 WARN S.AcceptClient [Thread-2] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:03:38,784 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:03:38,797 INFO S.AcceptClient [Thread-3] Client n°4connected. --> Accessible at : /192.168.1.74:49824
+2020-06-09 23:07:32,511 INFO S.AcceptClient [Thread-3] Files list sent to client n°4
+2020-06-09 23:17:21,229 ERROR S.AcceptClient [Thread-3] IOException when interacting with client.
+2020-06-09 23:17:21,233 WARN S.AcceptClient [Thread-3] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:19:23,845 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:19:23,858 INFO S.AcceptClient [Thread-4] Client n°5connected. --> Accessible at : /192.168.1.74:49905
+2020-06-09 23:19:38,279 INFO S.AcceptClient [Thread-4] Files list sent to client n°5
+2020-06-09 23:19:44,306 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:19:44,318 INFO S.AcceptClient [Thread-5] Client n°6connected. --> Accessible at : /192.168.1.74:49907
+2020-06-09 23:19:48,240 INFO S.AcceptClient [Thread-5] Files list sent to client n°6
+2020-06-09 23:20:08,220 INFO S.AcceptClient [Thread-4] Files list sent to client n°5
+2020-06-09 23:20:15,082 INFO S.AcceptClient [Thread-4] Files list sent to client n°5
+2020-06-09 23:21:23,919 ERROR S.AcceptClient [Thread-4] IOException when interacting with client.
+2020-06-09 23:21:23,920 WARN S.AcceptClient [Thread-4] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:21:31,676 ERROR S.AcceptClient [Thread-5] IOException when interacting with client.
+2020-06-09 23:21:31,677 WARN S.AcceptClient [Thread-5] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:21:38,072 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:21:38,090 INFO S.AcceptClient [Thread-6] Client n°7connected. --> Accessible at : /192.168.1.74:49933
+2020-06-09 23:21:40,614 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:21:40,622 INFO S.AcceptClient [Thread-7] Client n°8connected. --> Accessible at : /192.168.1.74:49935
+2020-06-09 23:21:43,392 INFO S.AcceptClient [Thread-6] Files list sent to client n°7
+2020-06-09 23:21:47,867 INFO S.AcceptClient [Thread-7] Files list sent to client n°8
+2020-06-09 23:22:14,342 ERROR S.AcceptClient [Thread-6] IOException when interacting with client.
+2020-06-09 23:22:14,343 WARN S.AcceptClient [Thread-6] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:22:28,224 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:22:28,242 INFO S.AcceptClient [Thread-8] Client n°9connected. --> Accessible at : /192.168.1.74:49953
+2020-06-09 23:22:36,368 INFO S.AcceptClient [Thread-8] Files list sent to client n°9
+2020-06-09 23:29:46,762 ERROR S.AcceptClient [Thread-8] IOException when interacting with client.
+2020-06-09 23:29:46,763 WARN S.AcceptClient [Thread-8] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:30:05,870 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:30:05,880 INFO S.AcceptClient [Thread-9] Client n°10connected. --> Accessible at : /192.168.1.74:50002
+2020-06-09 23:30:09,107 INFO S.AcceptClient [Thread-9] Files list sent to client n°10
+2020-06-09 23:30:17,504 ERROR S.AcceptClient [Thread-7] IOException when interacting with client.
+2020-06-09 23:30:17,505 WARN S.AcceptClient [Thread-7] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:30:21,088 ERROR S.AcceptClient [Thread-9] IOException when interacting with client.
+2020-06-09 23:30:21,091 WARN S.AcceptClient [Thread-9] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:30:23,536 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:30:23,563 INFO S.AcceptClient [Thread-10] Client n°11connected. --> Accessible at : /192.168.1.74:50014
+2020-06-09 23:30:27,199 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:30:27,224 INFO S.AcceptClient [Thread-11] Client n°12connected. --> Accessible at : /192.168.1.74:50021
+2020-06-09 23:30:30,187 INFO S.AcceptClient [Thread-11] Files list sent to client n°12
+2020-06-09 23:30:35,513 INFO S.AcceptClient [Thread-10] Files list sent to client n°11
+2020-06-09 23:31:35,239 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
+2020-06-09 23:31:43,761 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:31:43,827 INFO S.AcceptClient [Thread-0] Client n°1connected. --> Accessible at : /192.168.1.74:50054
+2020-06-09 23:31:47,168 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:31:47,194 INFO S.AcceptClient [Thread-1] Client n°2connected. --> Accessible at : /192.168.1.74:50061
+2020-06-09 23:31:51,089 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
+2020-06-09 23:31:54,495 INFO S.AcceptClient [Thread-1] Files list sent to client n°2
+2020-06-09 23:32:00,327 INFO S.AcceptClient [Thread-1] Files list sent to client n°2
+2020-06-09 23:32:21,526 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
+2020-06-09 23:40:23,157 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
+2020-06-09 23:40:44,460 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:40:44,492 INFO S.AcceptClient [Thread-0] Client n°1connected. --> Accessible at : /192.168.1.74:50144
+2020-06-09 23:40:46,465 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:40:46,472 INFO S.AcceptClient [Thread-1] Client n°2connected. --> Accessible at : /192.168.1.74:50146
+2020-06-09 23:40:50,185 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
+2020-06-09 23:40:57,496 INFO S.AcceptClient [Thread-1] Files list sent to client n°2
+2020-06-09 23:42:06,245 ERROR S.AcceptClient [Thread-0] IOException when interacting with client.
+2020-06-09 23:42:06,247 WARN S.AcceptClient [Thread-0] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:42:13,308 ERROR S.AcceptClient [Thread-1] IOException when interacting with client.
+2020-06-09 23:42:13,309 WARN S.AcceptClient [Thread-1] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:42:22,815 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:42:22,827 INFO S.AcceptClient [Thread-2] Client n°3connected. --> Accessible at : /192.168.1.74:50178
+2020-06-09 23:42:24,871 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:42:24,886 INFO S.AcceptClient [Thread-3] Client n°4connected. --> Accessible at : /192.168.1.74:50180
+2020-06-09 23:42:29,371 INFO S.AcceptClient [Thread-3] Files list sent to client n°4
+2020-06-09 23:42:33,471 INFO S.AcceptClient [Thread-2] Files list sent to client n°3
+2020-06-09 23:47:37,609 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
+2020-06-09 23:47:48,055 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:47:48,120 INFO S.AcceptClient [Thread-0] Client n°1connected. --> Accessible at : /192.168.1.74:50230
+2020-06-09 23:47:52,292 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:47:52,328 INFO S.AcceptClient [Thread-1] Client n°2connected. --> Accessible at : /192.168.1.74:50239
+2020-06-09 23:47:55,045 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
+2020-06-09 23:47:59,032 INFO S.AcceptClient [Thread-1] Files list sent to client n°2
+2020-06-09 23:48:31,614 ERROR S.AcceptClient [Thread-0] IOException when interacting with client.
+2020-06-09 23:48:31,615 WARN S.AcceptClient [Thread-0] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:48:51,585 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:48:51,601 INFO S.AcceptClient [Thread-2] Client n°3connected. --> Accessible at : /192.168.1.74:50270
+2020-06-09 23:49:12,578 INFO S.AcceptClient [Thread-2] Files list sent to client n°3
+2020-06-09 23:49:32,506 ERROR S.AcceptClient [Thread-2] IOException when interacting with client.
+2020-06-09 23:49:32,507 WARN S.AcceptClient [Thread-2] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:49:34,799 ERROR S.AcceptClient [Thread-1] IOException when interacting with client.
+2020-06-09 23:49:34,800 WARN S.AcceptClient [Thread-1] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:49:49,394 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:49:49,434 INFO S.AcceptClient [Thread-3] Client n°4connected. --> Accessible at : /192.168.1.74:50293
+2020-06-09 23:49:51,462 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:49:51,472 INFO S.AcceptClient [Thread-4] Client n°5connected. --> Accessible at : /192.168.1.74:50295
+2020-06-09 23:49:54,968 INFO S.AcceptClient [Thread-4] Files list sent to client n°5
+2020-06-09 23:49:58,511 INFO S.AcceptClient [Thread-3] Files list sent to client n°4
+2020-06-09 23:50:42,324 ERROR S.AcceptClient [Thread-3] IOException when interacting with client.
+2020-06-09 23:50:42,325 WARN S.AcceptClient [Thread-3] Lost the connexion with client. Files list has been updated.
+2020-06-09 23:56:45,458 INFO S.Server [main] A new client has been accepted.
+2020-06-09 23:56:45,502 INFO S.AcceptClient [Thread-5] Client n°6connected. --> Accessible at : /192.168.1.74:50336
+2020-06-09 23:56:50,008 INFO S.AcceptClient [Thread-5] Files list sent to client n°6
+2020-06-10 00:01:10,393 ERROR S.AcceptClient [Thread-5] IOException when interacting with client.
+2020-06-10 00:01:10,394 WARN S.AcceptClient [Thread-5] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:01:20,473 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:01:20,491 INFO S.AcceptClient [Thread-6] Client n°7connected. --> Accessible at : /192.168.1.74:50376
+2020-06-10 00:01:22,755 INFO S.AcceptClient [Thread-6] Files list sent to client n°7
+2020-06-10 00:01:51,405 ERROR S.AcceptClient [Thread-6] IOException when interacting with client.
+2020-06-10 00:01:51,406 WARN S.AcceptClient [Thread-6] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:02:05,419 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:02:05,441 INFO S.AcceptClient [Thread-7] Client n°8connected. --> Accessible at : /192.168.1.74:50391
+2020-06-10 00:02:06,859 INFO S.AcceptClient [Thread-7] Files list sent to client n°8
+2020-06-10 00:02:29,276 ERROR S.AcceptClient [Thread-7] IOException when interacting with client.
+2020-06-10 00:02:29,277 WARN S.AcceptClient [Thread-7] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:02:40,560 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:02:40,575 INFO S.AcceptClient [Thread-8] Client n°9connected. --> Accessible at : /192.168.1.74:50411
+2020-06-10 00:02:41,998 INFO S.AcceptClient [Thread-8] Files list sent to client n°9
+2020-06-10 00:03:10,452 ERROR S.AcceptClient [Thread-8] IOException when interacting with client.
+2020-06-10 00:03:10,453 WARN S.AcceptClient [Thread-8] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:03:24,022 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:03:24,030 INFO S.AcceptClient [Thread-9] Client n°10connected. --> Accessible at : /192.168.1.74:50421
+2020-06-10 00:05:47,738 ERROR S.AcceptClient [Thread-9] IOException when interacting with client.
+2020-06-10 00:05:47,740 WARN S.AcceptClient [Thread-9] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:06:02,606 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:06:02,638 INFO S.AcceptClient [Thread-10] Client n°11connected. --> Accessible at : /192.168.1.74:50466
+2020-06-10 00:06:22,492 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
+2020-06-10 00:08:59,766 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:08:59,876 INFO S.AcceptClient [Thread-0] Client n°1connected. --> Accessible at : /192.168.1.74:50525
+2020-06-10 00:09:04,686 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
+2020-06-10 00:09:21,768 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
+2020-06-10 00:09:43,474 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:09:43,488 INFO S.AcceptClient [Thread-1] Client n°2connected. --> Accessible at : /192.168.1.74:50536
+2020-06-10 00:09:44,821 INFO S.AcceptClient [Thread-1] Files list sent to client n°2
+2020-06-10 00:09:48,394 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
+2020-06-10 00:09:58,639 ERROR S.AcceptClient [Thread-0] IOException when interacting with client.
+2020-06-10 00:09:58,640 WARN S.AcceptClient [Thread-0] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:10:09,923 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:10:09,965 INFO S.AcceptClient [Thread-2] Client n°3connected. --> Accessible at : /192.168.1.74:50549
+2020-06-10 00:10:34,339 ERROR S.AcceptClient [Thread-2] IOException when interacting with client.
+2020-06-10 00:10:34,340 WARN S.AcceptClient [Thread-2] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:10:47,816 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:10:47,857 INFO S.AcceptClient [Thread-3] Client n°4connected. --> Accessible at : /192.168.1.74:50566
+2020-06-10 00:11:47,952 ERROR S.AcceptClient [Thread-3] IOException when interacting with client.
+2020-06-10 00:11:47,953 WARN S.AcceptClient [Thread-3] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:12:00,436 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:12:00,460 INFO S.AcceptClient [Thread-4] Client n°5connected. --> Accessible at : /192.168.1.74:50587
+2020-06-10 00:12:27,259 INFO S.AcceptClient [Thread-4] Files list sent to client n°5
+2020-06-10 00:23:05,457 ERROR S.AcceptClient [Thread-4] IOException when interacting with client.
+2020-06-10 00:23:05,458 WARN S.AcceptClient [Thread-4] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:23:16,306 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:23:16,329 INFO S.AcceptClient [Thread-5] Client n°6connected. --> Accessible at : /192.168.1.74:50660
+2020-06-10 00:23:17,754 INFO S.AcceptClient [Thread-5] Files list sent to client n°6
+2020-06-10 00:25:33,206 ERROR S.AcceptClient [Thread-5] IOException when interacting with client.
+2020-06-10 00:25:33,207 WARN S.AcceptClient [Thread-5] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:25:42,850 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:25:42,894 INFO S.AcceptClient [Thread-6] Client n°7connected. --> Accessible at : /192.168.1.74:50683
+2020-06-10 00:25:48,054 INFO S.AcceptClient [Thread-6] Files list sent to client n°7
+2020-06-10 00:28:32,809 ERROR S.AcceptClient [Thread-6] IOException when interacting with client.
+2020-06-10 00:28:32,810 WARN S.AcceptClient [Thread-6] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:28:41,788 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:28:41,820 INFO S.AcceptClient [Thread-7] Client n°8connected. --> Accessible at : /192.168.1.74:50723
+2020-06-10 00:28:44,159 INFO S.AcceptClient [Thread-7] Files list sent to client n°8
+2020-06-10 00:41:38,924 ERROR S.AcceptClient [Thread-7] IOException when interacting with client.
+2020-06-10 00:41:38,926 WARN S.AcceptClient [Thread-7] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:43:52,597 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:43:52,669 INFO S.AcceptClient [Thread-8] Client n°9connected. --> Accessible at : /192.168.1.74:50956
+2020-06-10 00:43:57,569 INFO S.AcceptClient [Thread-8] Files list sent to client n°9
+2020-06-10 00:44:17,558 ERROR S.AcceptClient [Thread-8] IOException when interacting with client.
+2020-06-10 00:44:17,559 WARN S.AcceptClient [Thread-8] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:44:34,757 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:44:34,779 INFO S.AcceptClient [Thread-9] Client n°10connected. --> Accessible at : /192.168.1.74:50970
+2020-06-10 00:44:41,420 INFO S.AcceptClient [Thread-9] Files list sent to client n°10
+2020-06-10 00:53:42,270 ERROR S.AcceptClient [Thread-9] IOException when interacting with client.
+2020-06-10 00:53:42,271 WARN S.AcceptClient [Thread-9] Lost the connexion with client. Files list has been updated.
+2020-06-10 00:53:55,686 INFO S.Server [main] A new client has been accepted.
+2020-06-10 00:53:55,708 INFO S.AcceptClient [Thread-10] Client n°11connected. --> Accessible at : /192.168.1.74:51124
+2020-06-10 00:53:58,753 INFO S.AcceptClient [Thread-10] Files list sent to client n°11
+2020-06-10 00:54:45,049 ERROR S.AcceptClient [Thread-10] IOException when interacting with client.
+2020-06-10 00:54:45,051 WARN S.AcceptClient [Thread-10] Lost the connexion with client. Files list has been updated.
+2020-06-10 01:05:57,693 INFO S.Server [main] A new client has been accepted.
+2020-06-10 01:05:57,710 INFO S.AcceptClient [Thread-11] Client n°12connected. --> Accessible at : /192.168.1.74:51346
+2020-06-10 01:05:59,729 INFO S.AcceptClient [Thread-11] Files list sent to client n°12
+2020-06-10 01:06:53,861 ERROR S.AcceptClient [Thread-11] IOException when interacting with client.
+2020-06-10 01:06:53,863 WARN S.AcceptClient [Thread-11] Lost the connexion with client. Files list has been updated.
+2020-06-12 00:42:20,646 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
+2020-06-12 00:42:33,014 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:42:33,055 INFO S.AcceptClient [Thread-0] Client n°1connected. --> Accessible at : /192.168.1.74:65212
+2020-06-12 00:42:51,928 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
+2020-06-12 00:43:38,650 ERROR S.AcceptClient [Thread-0] IOException when interacting with client.
+2020-06-12 00:43:38,654 WARN S.AcceptClient [Thread-0] Lost the connexion with client. Files list has been updated.
+2020-06-12 00:43:41,674 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:43:41,698 INFO S.AcceptClient [Thread-1] Client n°2connected. --> Accessible at : /192.168.1.74:65233
+2020-06-12 00:43:43,927 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:43:43,942 INFO S.AcceptClient [Thread-2] Client n°3connected. --> Accessible at : /192.168.1.74:65235
+2020-06-12 00:43:47,491 INFO S.AcceptClient [Thread-2] Files list sent to client n°3
+2020-06-12 00:49:41,753 ERROR S.AcceptClient [Thread-2] IOException when interacting with client.
+2020-06-12 00:49:41,754 WARN S.AcceptClient [Thread-2] Lost the connexion with client. Files list has been updated.
+2020-06-12 00:49:50,458 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:49:50,501 INFO S.AcceptClient [Thread-3] Client n°4connected. --> Accessible at : /192.168.1.74:65340
+2020-06-12 00:49:56,044 ERROR S.AcceptClient [Thread-3] IOException when interacting with client.
+2020-06-12 00:49:56,045 WARN S.AcceptClient [Thread-3] Lost the connexion with client. Files list has been updated.
+2020-06-12 00:50:00,861 ERROR S.AcceptClient [Thread-1] IOException when interacting with client.
+2020-06-12 00:50:00,862 WARN S.AcceptClient [Thread-1] Lost the connexion with client. Files list has been updated.
+2020-06-12 00:50:05,850 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:50:05,873 INFO S.AcceptClient [Thread-4] Client n°5connected. --> Accessible at : /192.168.1.74:65354
+2020-06-12 00:50:07,871 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:50:07,894 INFO S.AcceptClient [Thread-5] Client n°6connected. --> Accessible at : /192.168.1.74:65356
+2020-06-12 00:50:09,795 INFO S.AcceptClient [Thread-5] Files list sent to client n°6
+2020-06-12 00:51:05,829 ERROR S.AcceptClient [Thread-5] IOException when interacting with client.
+2020-06-12 00:51:05,830 WARN S.AcceptClient [Thread-5] Lost the connexion with client. Files list has been updated.
+2020-06-12 00:51:36,559 ERROR S.AcceptClient [Thread-4] IOException when interacting with client.
+2020-06-12 00:51:36,560 WARN S.AcceptClient [Thread-4] Lost the connexion with client. Files list has been updated.
+2020-06-12 00:51:44,820 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:51:44,853 INFO S.AcceptClient [Thread-6] Client n°7connected. --> Accessible at : /192.168.1.74:65376
+2020-06-12 00:51:48,814 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:51:48,835 INFO S.AcceptClient [Thread-7] Client n°8connected. --> Accessible at : /192.168.1.74:65389
+2020-06-12 00:51:50,056 INFO S.AcceptClient [Thread-7] Files list sent to client n°8
+2020-06-12 00:54:59,194 ERROR S.AcceptClient [Thread-7] IOException when interacting with client.
+2020-06-12 00:54:59,197 WARN S.AcceptClient [Thread-7] Lost the connexion with client. Files list has been updated.
+2020-06-12 00:55:11,196 ERROR S.AcceptClient [Thread-6] IOException when interacting with client.
+2020-06-12 00:55:11,196 WARN S.AcceptClient [Thread-6] Lost the connexion with client. Files list has been updated.
+2020-06-12 00:55:13,492 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:55:13,522 INFO S.AcceptClient [Thread-8] Client n°9connected. --> Accessible at : /192.168.1.74:65413
+2020-06-12 00:55:18,376 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:55:18,403 INFO S.AcceptClient [Thread-9] Client n°10connected. --> Accessible at : /192.168.1.74:65424
+2020-06-12 00:55:32,492 INFO S.AcceptClient [Thread-8] Files list sent to client n°9
+2020-06-12 00:58:40,274 ERROR S.AcceptClient [Thread-8] IOException when interacting with client.
+2020-06-12 00:58:40,275 WARN S.AcceptClient [Thread-8] Lost the connexion with client. Files list has been updated.
+2020-06-12 00:59:04,643 ERROR S.AcceptClient [Thread-9] IOException when interacting with client.
+2020-06-12 00:59:04,643 WARN S.AcceptClient [Thread-9] Lost the connexion with client. Files list has been updated.
+2020-06-12 00:59:07,589 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:59:07,612 INFO S.AcceptClient [Thread-10] Client n°11connected. --> Accessible at : /192.168.1.74:65468
+2020-06-12 00:59:09,550 INFO S.Server [main] A new client has been accepted.
+2020-06-12 00:59:09,587 INFO S.AcceptClient [Thread-11] Client n°12connected. --> Accessible at : /192.168.1.74:65471
+2020-06-12 00:59:13,123 INFO S.AcceptClient [Thread-10] Files list sent to client n°11
+2020-06-12 00:59:16,069 INFO S.AcceptClient [Thread-11] Files list sent to client n°12
+2020-06-12 01:00:45,521 ERROR S.AcceptClient [Thread-11] IOException when interacting with client.
+2020-06-12 01:00:45,522 WARN S.AcceptClient [Thread-11] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:05:20,297 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:05:20,307 INFO S.AcceptClient [Thread-12] Client n°13connected. --> Accessible at : /192.168.1.74:49409
+2020-06-12 01:05:24,593 INFO S.AcceptClient [Thread-12] Files list sent to client n°13
+2020-06-12 01:10:20,573 ERROR S.AcceptClient [Thread-12] IOException when interacting with client.
+2020-06-12 01:10:20,574 WARN S.AcceptClient [Thread-12] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:10:31,707 ERROR S.AcceptClient [Thread-10] IOException when interacting with client.
+2020-06-12 01:10:31,708 WARN S.AcceptClient [Thread-10] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:10:38,461 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:10:38,476 INFO S.AcceptClient [Thread-13] Client n°14connected. --> Accessible at : /192.168.1.74:49691
+2020-06-12 01:10:42,779 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:10:42,794 INFO S.AcceptClient [Thread-14] Client n°15connected. --> Accessible at : /192.168.1.74:49700
+2020-06-12 01:10:46,369 INFO S.AcceptClient [Thread-13] Files list sent to client n°14
+2020-06-12 01:11:14,235 ERROR S.AcceptClient [Thread-13] IOException when interacting with client.
+2020-06-12 01:11:14,236 WARN S.AcceptClient [Thread-13] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:11:17,436 ERROR S.AcceptClient [Thread-14] IOException when interacting with client.
+2020-06-12 01:11:17,436 WARN S.AcceptClient [Thread-14] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:13:56,232 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
+2020-06-12 01:14:09,142 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:14:09,225 INFO S.AcceptClient [Thread-0] Client n°1connected. --> Accessible at : /192.168.1.74:49854
+2020-06-12 01:14:11,456 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:14:11,469 INFO S.AcceptClient [Thread-1] Client n°2connected. --> Accessible at : /192.168.1.74:49856
+2020-06-12 01:14:13,361 INFO S.AcceptClient [Thread-1] Files list sent to client n°2
+2020-06-12 01:14:39,475 ERROR S.AcceptClient [Thread-1] IOException when interacting with client.
+2020-06-12 01:14:39,477 WARN S.AcceptClient [Thread-1] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:14:41,500 ERROR S.AcceptClient [Thread-0] IOException when interacting with client.
+2020-06-12 01:14:41,502 WARN S.AcceptClient [Thread-0] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:19:13,423 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:19:13,453 INFO S.AcceptClient [Thread-2] Client n°3connected. --> Accessible at : /192.168.1.74:49996
+2020-06-12 01:19:15,791 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:19:15,801 INFO S.AcceptClient [Thread-3] Client n°4connected. --> Accessible at : /192.168.1.74:49998
+2020-06-12 01:19:17,601 INFO S.AcceptClient [Thread-3] Files list sent to client n°4
+2020-06-12 01:22:38,610 ERROR S.AcceptClient [Thread-3] IOException when interacting with client.
+2020-06-12 01:22:38,612 WARN S.AcceptClient [Thread-3] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:22:46,969 ERROR S.AcceptClient [Thread-2] IOException when interacting with client.
+2020-06-12 01:22:46,969 WARN S.AcceptClient [Thread-2] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:25:39,317 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:25:39,369 INFO S.AcceptClient [Thread-4] Client n°5connected. --> Accessible at : /192.168.1.74:50086
+2020-06-12 01:25:45,995 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:25:46,018 INFO S.AcceptClient [Thread-5] Client n°6connected. --> Accessible at : /192.168.1.74:50096
+2020-06-12 01:25:47,602 INFO S.AcceptClient [Thread-5] Files list sent to client n°6
+2020-06-12 01:26:08,668 ERROR S.AcceptClient [Thread-5] IOException when interacting with client.
+2020-06-12 01:26:08,670 WARN S.AcceptClient [Thread-5] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:26:14,335 ERROR S.AcceptClient [Thread-4] IOException when interacting with client.
+2020-06-12 01:26:14,338 WARN S.AcceptClient [Thread-4] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:28:52,466 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:28:52,476 INFO S.AcceptClient [Thread-6] Client n°7connected. --> Accessible at : /192.168.1.74:50135
+2020-06-12 01:28:55,353 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:28:55,362 INFO S.AcceptClient [Thread-7] Client n°8connected. --> Accessible at : /192.168.1.74:50137
+2020-06-12 01:28:59,497 INFO S.AcceptClient [Thread-7] Files list sent to client n°8
+2020-06-12 01:43:56,227 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
+2020-06-12 01:44:15,232 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:44:15,281 INFO S.AcceptClient [Thread-0] Client n°1connected. --> Accessible at : /192.168.1.74:50174
+2020-06-12 01:44:19,324 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:44:19,334 INFO S.AcceptClient [Thread-1] Client n°2connected. --> Accessible at : /192.168.1.74:50176
+2020-06-12 01:44:21,166 INFO S.AcceptClient [Thread-1] Files list sent to client n°2
+2020-06-12 01:44:46,714 INFO S.AcceptClient [Thread-1] Files list sent to client n°2
+2020-06-12 01:47:13,247 ERROR S.AcceptClient [Thread-1] IOException when interacting with client.
+2020-06-12 01:47:13,249 WARN S.AcceptClient [Thread-1] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:47:14,848 ERROR S.AcceptClient [Thread-0] IOException when interacting with client.
+2020-06-12 01:47:14,849 WARN S.AcceptClient [Thread-0] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:47:24,529 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:47:24,545 INFO S.AcceptClient [Thread-2] Client n°3connected. --> Accessible at : /192.168.1.74:50219
+2020-06-12 01:47:35,241 INFO S.Server [main] A new client has been accepted.
+2020-06-12 01:47:35,267 INFO S.AcceptClient [Thread-3] Client n°4connected. --> Accessible at : /192.168.1.74:50229
+2020-06-12 01:47:36,097 INFO S.AcceptClient [Thread-3] Files list sent to client n°4
+2020-06-12 01:50:21,345 ERROR S.AcceptClient [Thread-3] IOException when interacting with client.
+2020-06-12 01:50:21,346 WARN S.AcceptClient [Thread-3] Lost the connexion with client. Files list has been updated.
+2020-06-12 01:50:23,498 ERROR S.AcceptClient [Thread-2] IOException when interacting with client.
+2020-06-12 01:50:23,499 WARN S.AcceptClient [Thread-2] Lost the connexion with client. Files list has been updated.
