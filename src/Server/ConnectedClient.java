@@ -4,7 +4,7 @@ import java.net.InetAddress;
 import java.util.ArrayList;
 
 /**
- * Objet permettant de gérer la liste des clients connectés
+ * Objet permettant de gerer la liste des clients connectes
  */
 public class ConnectedClient {
 
@@ -30,7 +30,7 @@ public class ConnectedClient {
     }
 
     /**
-     * Récupérer l'id du client
+     * Recuperer l'id du client
      * @return
      */
     public int getClientNumber() {

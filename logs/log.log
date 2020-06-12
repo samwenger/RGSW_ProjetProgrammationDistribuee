@@ -528,3 +528,8 @@
 2020-06-12 16:29:24,249 INFO S.AcceptClient [Thread-0] Files list sent to client n°1
 2020-06-12 16:29:29,408 ERROR S.AcceptClient [Thread-0] IOException when interacting with client.
 2020-06-12 16:29:29,410 WARN S.AcceptClient [Thread-0] Lost the connexion with client. Files list has been updated.
+2020-06-12 17:28:25,911 ERROR S.Server [main] IOException thrown when trying to create ServerSocket
+2020-06-12 17:28:56,551 ERROR S.Server [main] IOException thrown when trying to create ServerSocket
+2020-06-12 17:30:41,096 ERROR S.Server [main] IOException thrown when trying to create ServerSocket
+2020-06-12 18:10:22,990 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
+2020-06-12 18:11:55,452 INFO S.Server [main] Server has been started. Accessible at : /192.168.1.74:45007
