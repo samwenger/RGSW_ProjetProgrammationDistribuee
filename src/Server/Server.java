@@ -12,6 +12,9 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 
 
+/**
+ * Classe pour gérer l'objet serveur
+ */
 public class Server {
 
     private String interfaceName;
@@ -28,6 +31,12 @@ public class Server {
     public Logger logger = LogManager.getLogger(Server.class);
 
 
+    /**
+     * Constructeur du serveur
+     *
+     * @param interfaceName
+     * @param serverPort
+     */
     public Server(String interfaceName, int serverPort) {
         this.interfaceName = interfaceName;
         this.serverPort = serverPort;
@@ -36,6 +45,9 @@ public class Server {
     }
 
 
+    /**
+     * Récupération de l'adresse locale (ip) à partir d'une interface
+     */
     public void getLocalAddress() {
 
         try {
@@ -60,6 +72,9 @@ public class Server {
     }
 
 
+    /**
+     * Création d'un socket de serveur pour recevoir les connexions
+     */
     public void createSocket() {
         try {
             serverSocket = new ServerSocket(serverPort, 10, localAddress);
@@ -70,14 +85,19 @@ public class Server {
     }
 
 
-
+    /**
+     * Information de confirmation de connexion du serveur
+     */
     public void displayInfos() {
         logger.info("Server has been started. Accessible at : " + serverSocket.getInetAddress() + ":" + serverSocket.getLocalPort());
         System.out.println();
     }
 
 
-
+    /**
+     * Ecoute du socket et acceptation des connexions de clients (multi-thread)
+     * @throws IOException
+     */
     public void acceptConnexions() throws IOException {
         while(true)
         {
@@ -109,14 +129,26 @@ public class Server {
 
     }
 
+    /**
+     * Retirer un client de la liste des clients connectés
+     * @param client
+     */
     public void removeClientFromList(ConnectedClient client) {
         clients.remove(client);
     }
 
+    /**
+     * Récupérer la liste des clients connectés avec leurs sons disponibles
+     * @return
+     */
     public ArrayList<ConnectedClient> getClientList() {
         return clients;
     }
 
+    /**
+     * Ajouter un nouveau client et sa liste de sons disponibles à la liste
+     * @param client
+     */
     public void addClient(ConnectedClient client) {
         clients.add(client);
     }

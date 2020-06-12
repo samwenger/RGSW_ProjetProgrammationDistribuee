@@ -5,10 +5,18 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 
+/**
+ * Application permettant de lancer le serveur
+ */
 public class ServerApp {
 
     private static Logger logger = LogManager.getLogger(ServerApp.class);
 
+
+    /**
+     * Création et lancement du serveur
+     * @param args
+     */
     public static void main(String[] args) {
 
 

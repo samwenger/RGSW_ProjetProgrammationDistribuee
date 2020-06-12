@@ -6,6 +6,9 @@ import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
 
+/**
+ * Classe gérant le client connecté et ses interactions avec le serveur
+ */
 public class AcceptClient implements Runnable {
 
     private Server server;
@@ -20,6 +23,15 @@ public class AcceptClient implements Runnable {
     private ConnectedClient client;
 
 
+    /**
+     * Constructeur de la classe AcceptClient
+     * @param server
+     * @param clientNumber
+     * @param clientSocketOnServer
+     * @param dataInputStream
+     * @param dataOutputStream
+     * @param objectInputStream
+     */
     public AcceptClient (Server server, int clientNumber, Socket clientSocketOnServer, DataInputStream dataInputStream, DataOutputStream dataOutputStream, ObjectInputStream objectInputStream)
     {
         this.server = server;
@@ -31,6 +43,9 @@ public class AcceptClient implements Runnable {
         this.objectInputStream = objectInputStream;
     }
 
+    /**
+     * Gère les interactions entre un client et le serveur
+     */
     @Override
     public void run() {
 
